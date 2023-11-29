@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>esta es mi primer html</title>
+        <style>
+            body{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>este sería mi primer parrafo</p>
+        <h1>este el titulo principal</h1>
+        <h2>este es un titulo secundario</h2>
+        <h3>este es el tercero</h3>
+        <h4>este es el cuarto</h4>
+        <h5>este es el quinto</h5>
+        <h6>este es el sexto</h6>
+        <a href="http://google.com" target="_blank">ir a google</a>
+        <img src="https://i.pinimg.com/originals/dc/ab/b7/dcabb7fbb2f763d680d20a3d228cc6f9.jpg" alt="soy pikachu"/>
+
+        <ul>
+            <li>pikachu</li>
+            <li>charmander</li>            
+            <li>bulbasaur</li>
+        </ul>
+        <ol>
+            <li>pikachu</li>
+            <li>charmander</li>            
+            <li>bulbasaur</li>
+        </ol>
+
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pepe</td>
+                    <td>Perez</td>
+                    <td>25</td>
+                </tr>                
+                <tr>
+                    <td>Juan</td>
+                    <td>Lopez</td>
+                    <td>33</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <p>este es mi con negrita <strong>con strong</strong> y <b>negrita con b</b></p>
+        <p>este es mi texto en <em>cursiva con em</em> y <i>cursiva con i</i></p>
+        <p>este es mi texto <span>con span</span></p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eos quasi quaerat reprehenderit quia error ex! Quaerat autem fugit quidem, veritatis velit sed ipsam eius cupiditate rem facilis, tempora fuga.</p>
+        </div>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam iusto nihil sequi. Corrupti porro itaque voluptates harum, quae debitis distinctio enim accusamus ipsa esse vero? Rerum ipsum dolorem hic.</p>
+        </div>
+
+        <form method="get" action="index2.html">
+            <fieldset>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre" value="Pepito" required minlength="2" maxlength="20"/>
+                    <input type="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" oninvalid="this.setCustomValidity('No cumple el patron')" required/>
+                </div>
+                
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha"/>
+    
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <input type="number"  name="edad"/>
+                <input type="color"  name="colorFavorito" value="#444444"/>
+                <input type="file"  name="curriculum"/>
+                <input type="button" value="enviar"/>
+
+            </fieldset>
+            <fieldset>
+                <select  name="opcionFavorita">
+                    <option value="opcion1">opcion1</option>
+                    <option value="opcion2">opcion2</option>
+                    <option value="opcion3">opcion3</option>
+                </select>
+    
+                <textarea></textarea>
+    
+                <input type="checkbox" />
+                <input type="radio" name="animal" checked/> Perro
+                <input type="radio" name="animal"/> Gato
+                <input type="radio" name="animal"/> Pajaro
+
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>            
+            <button type="button">Más</button>
+
+        </form>
+
+
+    </body>
+</html>
