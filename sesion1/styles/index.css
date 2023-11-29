@@ -1,0 +1,59 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap'); */
+
+
+@font-face {
+    font-family: 'Pepito';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pepito';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Pepito';
+    src: url('../fonts/Roboto-Light.ttf');
+    font-weight: 100;
+}
+
+p{
+    color: red;
+}
+
+h1{
+    color: rgb(60, 70 , 140); 
+} 
+
+h1.h1-secundario{
+    color: rgba(23, 0, 200, 0.856);
+}
+
+.h1-principal{
+    color: #ff0055;
+}
+
+#h1-id{
+    color: blue;
+}
+
+p, h1{
+    font-family: 'Pepito', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p, .h1-principal{
+text-decoration: underline;
+}
+
+.h1-principal span{
+    background-color: yellow;
+}
+
+
+h1 span{
+    background-color: aqua;
+}

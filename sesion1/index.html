@@ -72,7 +72,7 @@
                 <div>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" placeholder="Nombre" value="Pepito" required minlength="2" maxlength="20"/>
-                    <input type="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" oninvalid="this.setCustomValidity('No cumple el patron')" required/>
+                    <!-- <input type="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" oninvalid="this.setCustomValidity('No cumple el patron')" required/> -->
                 </div>
                 
                 <div>
@@ -94,6 +94,7 @@
                     <option value="opcion1">opcion1</option>
                     <option value="opcion2">opcion2</option>
                     <option value="opcion3">opcion3</option>
+                    <option value="pepito">opcion4</option>
                 </select>
     
                 <textarea></textarea>
@@ -111,6 +112,16 @@
 
         </form>
 
+        <!--ESTO ES UN COMENTARIO-->    
+        <!--RUTA ABSOLUTA-->
+        <a href="http://google.com" target="_blank">ir a google</a>
 
+        <!--RUTAS RELATIVAS-->
+        <a href="/sesion1/index2.html" >Enlace 1</a>
+
+        <a href="./index2.html">Enlace 2</a>
+
+        <a href="../prueba/index_prueba.html">Enlace 3</a>
+        
     </body>
 </html>
