@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 300vh;
+}
+
+div{
+    width: 90vw;
+    height: 300px;
+    background-color: red;
+    border: 10px solid #333;
+    margin: 10px;
+    padding: 10px;
+}
+
+    /* 
+    Con top left right y bottom moveré mis cajas si mi posicionamiento me lo permite
+    top: ; Muevo 
+    left: ;
+    right: ;
+    bottom: ;  */
+.static{
+    position: static;
+    background-color: blue;
+    top: 50px;
+}
+
+
+.relative{
+    position: relative;
+    background-color: green;
+    top: 150px;
+    left: 100px;
+}
+
+.relative2{
+    position: relative;
+    background-color: rgb(255, 255, 0);
+    top: 150px;
+    left: 100px;
+}
+
+
+.absolute{
+    position: absolute;
+    background-color: purple;
+    top: 100px;
+}
+
+
+.absolute2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px); /*con calc podemos calcular una distancia de dos cantidades de distinto unidad*/
+
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: grey;
+}
+
+
+
+.fixed{
+    position: fixed;
+    bottom: 20px;
+} 

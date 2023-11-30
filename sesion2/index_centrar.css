@@ -1,0 +1,39 @@
+
+p{
+    text-align: center;
+    width: 100%;
+    /* background-color: red; */
+    margin: 0 auto;
+    background: linear-gradient(90deg, red 0%, blue 30%, blue 30%, blue 70%, blue 70%, red 100%);
+
+}
+
+/* p span{
+    display: inline-block;
+    background-color: green;
+    width: 30%;
+    height: 10px;
+}
+
+p span.texto{
+    display: inline-block;
+    background-color: red;
+    width: 40%;
+
+} */
+
+div{
+    height: 300px;
+    background-color: yellow;
+    position: relative;
+}
+
+div p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* div{
+    padding-top: 100px;
+} */

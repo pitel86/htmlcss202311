@@ -1,0 +1,20 @@
+div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: 10px solid #333;
+    margin: 10px;
+    padding: 10px;
+    display: inline; /*Display inline hace que nuestra caja ocupe solo el tamaño de lo que contenga, no tienen efecto el width ni height, y nos pone en linea los elementos*/
+    display: inline-block;  /*Display inline-block nos pone en linea los elementos pero si que permite width y height */
+    display: block; /*Display block hace que nuestras cajas sean un bloque y permite witdh y height*/;
+
+    display:  none; /*Display none hace que no se muestre nuestra caja*/
+    display: inline-block;
+    /* display: flex;
+    display: grid; */
+}
+
+div span{
+    background-color: green;
+}

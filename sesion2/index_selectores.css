@@ -1,0 +1,100 @@
+.miDiv p{
+    color: red;
+}
+
+.miDiv > p{
+    font-size: 20px;
+}
+
+p + div{
+    background-color: blue;
+}
+
+p ~ div{
+    border: 10px solid black;
+}
+
+*.colorBlue{
+    color: blue;
+}   
+
+.miDiv div p{
+    color: green;
+}
+
+button{
+    /* background-color: green!important;  /*Intentar no utilzar nunca important*/
+} 
+
+button.bgYellow{
+    background-color: yellow;
+}
+
+.colorBlue.bgYellow{
+    font-size: 30px;
+}
+
+li:last-child{
+    color: red;
+}
+
+li:first-child{
+    color: green;
+}
+
+li:nth-child(4){
+    color: purple;
+}
+
+a[href="http://google.com"]{
+    color: green;
+}
+
+a[href="http://facebook.com"]{
+    color: rgb(0, 191, 255);
+}
+
+li[color="negro"]{
+    color: green;
+}
+
+.after::before{
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2527/2527324.png);
+    background-size: cover;
+}
+.after::after{
+    content: '';
+    background-image: url('https://img.freepik.com/vector-premium/gato-personaje-dibujos-animados-icono-gatito_71328-583.jpg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.bgYellow:hover{
+    background-color: fuchsia;
+}
+
+.bgYellow:active{
+    background-color: yellowgreen;
+}
+
+a[href="http://google.com"]:visited{
+    color: rgb(0, 92, 128);
+}
+
+
+a[href="http://facebook.com"]:visited{
+    color: rgb(255, 0, 212);
+}
+
+input:focus{
+    border: 3px solid green;
+    outline: none;
+}

@@ -1,0 +1,22 @@
+.divPadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:50px;
+    align-items: end;
+    align-content: center;
+}
+
+.divPadre div{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border: 10px solid blue;
+    flex-grow: 1;
+}
+
+.divPadre .primero{
+    order: -1;
+    flex-grow: 1;
+}
