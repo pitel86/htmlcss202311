@@ -1,0 +1,47 @@
+.base{
+    background-color: $color-principal;
+    padding: $padding-base;
+    color: rgb(217, 217, 217);
+
+    &__title{ 
+        @include titleElement(white, 30px);
+
+        @include tablet{
+            color: yellow;
+        } 
+        @include desktop{
+            color: rgb(255, 153, 0);
+        }   
+
+    }
+
+    &__text{
+        color: blue;
+        
+        @include tablet{
+            color: yellow;
+        }   
+    }
+
+    &__button{
+        @include buttonElement(red, white, 30px);
+      
+
+        &--submit{
+            background-color: $color-secundario;
+        }
+    }
+
+}
+
+@include large{
+    .base{
+        &__text{
+            color: rgb(0, 187, 255);  
+        }
+        &__title{
+            color: purple;
+        }
+    }
+
+}

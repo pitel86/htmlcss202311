@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./index_bem.css">
+    </head>
+    <body>
+        <!-- BEM: BLOQUE ELEMENTO MODIFICADOR-->
+        <header class="header"> <!-- Llamo la clase de mi bloque con un nombre descriptivo, ej: header-->
+            <div class="header-logo">
+                <img src="" class="header-logo__image" />
+            </div>
+            <nav class="header-nav">
+                <!-- <ul class="header-nav-list">
+                    <li class="header-nav-list__item"></li>
+                </ul> -->
+                <a href="" class="header-nav__item header-nav__item--active" >Enlace</a>
+                <a href="" class="header-nav__item" >Enlace</a>
+                <a href="" class="header-nav__item" >Enlace</a>
+                <a href="" class="header-nav__item header-nav__item--inactive" >Enlace</a>
+                <a href="" class="header-nav__item" >Enlace</a>
+                <a href="" class="header-nav__item" >Enlace</a>
+            </nav>
+        </header>
+        <main>
+            <div class="contacto">
+                <h3 class="contacto__title">Contactanos</h3>
+                <form class="contact-form">
+                    <input type="text" class="contact-form__input contact-form__input--error" />
+                    <select class="contact-form__select">
+                        <option value="opcion 1">Opcion1</option>
+                        <option value="opcion 2">Opcion2</option>
+                        <option value="opcion 3">Opcion3</option>
+                    </select>
+                    <button class="contact-form__button contact-form__button--reset">Reset</button>
+                    <button class="contact-form__button contact-form__button--submit">Enviar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

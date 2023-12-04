@@ -1,0 +1,25 @@
+@mixin buttonElement($bgColor: whitesmoke, $color: black, $padding: 10px){
+    background-color: $bgColor;
+    margin: 10px;
+    border: 1px solid $color;
+    text-align: center;
+    padding: $padding;
+    color: $color;
+}
+
+@mixin titleElement($color: #000000, $size: 20px){
+    font-size: $size;
+    color: $color;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+@mixin flexElement($direction: row, $justify: space-around, $wrap: wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+.contacto{
+    background-color: $color-secundario;
+    padding: $padding-base;
+    color: rgb(217, 217, 217);
+    @include flexElement(column);
+
+    &__title{ 
+        @include titleElement()
+    }
+
+    &__text{
+        color: blue;
+    }
+
+    &-form{
+
+        &__button{
+            @include buttonElement(red, white, 10px);
+    
+            &--submit{
+                background-color: $color-secundario;
+            }
+        }
+    }
+}

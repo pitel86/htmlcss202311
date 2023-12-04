@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.base {
+  background-color: #4c1111;
+  padding: 10px;
+  color: rgb(217, 217, 217);
+}
+.base__title {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .base__title {
+    color: yellow;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .base__title {
+    color: rgb(255, 153, 0);
+  }
+}
+.base__text {
+  color: blue;
+}
+@media screen and (min-width: 768px) {
+  .base__text {
+    color: yellow;
+  }
+}
+.base__button {
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+.base__button--submit {
+  background-color: #208631;
+}
+
+@media screen and (min-width: 1200px) {
+  .base__text {
+    color: rgb(0, 187, 255);
+  }
+  .base__title {
+    color: purple;
+  }
+}
+.contacto {
+  background-color: #208631;
+  padding: 10px;
+  color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contacto__title {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.contacto__text {
+  color: blue;
+}
+.contacto-form__button {
+  background-color: red;
+  margin: 10px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.contacto-form__button--submit {
+  background-color: #208631;
+}/*# sourceMappingURL=styles.css.map */
