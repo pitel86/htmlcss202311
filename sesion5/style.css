@@ -1,0 +1,88 @@
+.box1{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transition: background-color 2s, width 1s, height 3s, transform 1s;
+}
+
+.box1:hover{
+    background-color: blue;
+    transition: background-color 2s, width 3s, height 1s transform 1s;
+    width: 400px;
+    height: 500px;
+    transform: rotate(45deg);
+}
+
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    position: relative;
+    /* animation-name: changePosition; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvY7FIO1qvqCs7RuwqBlctreSRZxan5XRtciesD-9iXQ&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box2:hover{
+    
+}
+
+@keyframes changePosition{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    20%{
+        top: 200px;
+        left: 200px;
+        background-color: yellow;
+        transform: rotate(60deg);
+        background-image: url('https://static.miraheze.org/greatcharacterswiki/thumb/0/09/Goku.png/640px-Goku.png');
+    }
+    40%{
+        top: 200px;
+        left: 400px;
+        background-color: orange;
+        transform: rotate(100deg);
+        background-image: url('https://i.pinimg.com/originals/4c/4d/56/4c4d5628cb5822328de773d860b47aba.png');
+    }
+    60%{
+        top: 400px;
+        left: 400px;
+        background-color: red;
+        transform: rotate(160deg);
+        background-image: url('https://i.pinimg.com/originals/6f/9c/1c/6f9c1c98eae819abefc3b1480f9815aa.jpg');
+    }
+    80%{
+        top: 200px;
+        left: 200px;
+        background-color: blue;
+        background-image: url('https://sm.ign.com/ign_latam/screenshot/default/01111_7qyj.jpg');
+        transform: rotate(220deg);
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: green;
+        transform: rotate(360deg);
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvY7FIO1qvqCs7RuwqBlctreSRZxan5XRtciesD-9iXQ&s');
+    }
+}
+
+.animate__animated{
+    text-align: center;
+}
+
+.box3{
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+}
+
+.box3:hover{
+    animation: hinge; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
